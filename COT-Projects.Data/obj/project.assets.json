@@ -5962,11 +5962,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
       "projectName": "COT-Projects.Data",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
+      "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

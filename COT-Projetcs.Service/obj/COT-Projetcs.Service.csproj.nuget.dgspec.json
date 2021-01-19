@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {}
+    "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
+    "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
         "projectName": "COT-Projects.Data",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
+        "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
+    "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
         "projectName": "COT-Projetcs.Service",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
+        "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projetcs.Service\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -112,8 +112,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
+              "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IBU6ZgIB9CTnnCqJnjn74ZlFE/9yEPwnWHS18qm5FHsc9jBCzgI56cvE5GNhRNWm4QAFoq6N6SWRF62COExPQg==",
+  "dgSpecHash": "mXrKZ3LApDhTpbZek/eBddh8HM0pWjCed4jG0F/ibOf8SUh2I4YpRUcdn3jDcg0YB+ARK3O6K4a5g2Fj1dGkQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.2\\microsoft.aspnetcore.cryptography.internal.5.0.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.2\\microsoft.aspnetcore.cryptography.keyderivation.5.0.2.nupkg.sha512",

@@ -9174,11 +9174,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects\\COT-Projects.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj",
       "projectName": "COT-Projects",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects\\COT-Projects.csproj",
+      "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -9200,14 +9200,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj"
+            "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj"
             },
-            "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
+            "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
             },
-            "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\Dev\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj"
+            "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj"
             }
           }
         }

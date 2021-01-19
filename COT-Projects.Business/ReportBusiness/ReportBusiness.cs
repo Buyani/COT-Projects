@@ -19,31 +19,18 @@ namespace COT_Projects.Business.ReportBusiness
             this._reportRepository = reportRepository;
             this._mapper = mapper;
         }
-        public async Task<ReportModel> AddReportAsync(ReportModel model)
+        public async Task<Report> AddReportAsync(Report model)
         {
-            var report = _mapper.Map<Report>(model);
-            report.Netpositions = NetPosition(report);
-            var results = _mapper.Map<ReportModel>(report);
-            await _reportRepository.AddAsync(report);
-            return results;
+            var report = _mapper.Map<Report>(model);       
+            return await _reportRepository.AddAsync(report); 
         }
-        public async Task<List<ReportModel>> GetAllReportsAsync()
+        public async Task<List<Report>> GetAllReportsAsync()
         {
-
-            var list = _reportRepository.GetAllReportsAsync();
-
-
             return await _reportRepository.GetAllReportsAsync();
         }
-
         public async Task<Report> GetReportByIdAsync(int id)
         {
             return await _reportRepository.GetReportByIdAsync(id);
-        }
-
-        private int NetPosition(Report model)
-        {
-            return model.Long - model.Short;
         }
     }
 }

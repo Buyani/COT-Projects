@@ -9,8 +9,8 @@ namespace COT_Projects.Business.ReportBusiness
 {
     public interface IReportBusiness 
     {
-        //Task<List<ReportModel>> GetAllReportsAsync();
-        //Task<ReportModel> GetReportByIdAsync(int id);
-        Task<ReportModel> AddReportAsync(ReportModel newreport);
+        Task<List<Report>> GetAllReportsAsync();
+        Task<Report> GetReportByIdAsync(int id);
+        Task<Report> AddReportAsync(Report newreport);
     }
 }
