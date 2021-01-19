@@ -1,0 +1,64 @@
+﻿@model COT_Projects.Model.Models.ReportModel
+
+@{
+    ViewData["Title"] = "CreateReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Create Report</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateReport">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Short" class="control-label"></label>
+                <input asp-for="Short" class="form-control" />
+                <span asp-validation-for="Short" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Long" class="control-label"></label>
+                <input asp-for="Long" class="form-control" />
+                <span asp-validation-for="Long" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChangeShort" class="control-label"></label>
+                <input asp-for="ChangeShort" class="form-control" />
+                <span asp-validation-for="ChangeShort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChangeLong" class="control-label"></label>
+                <input asp-for="ChangeLong" class="form-control" />
+                <span asp-validation-for="ChangeLong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateCreated" class="control-label"></label>
+                <input asp-for="DateCreated" class="form-control" />
+                <span asp-validation-for="DateCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortPercent" class="control-label"></label>
+                <input asp-for="ShortPercent" class="form-control" />
+                <span asp-validation-for="ShortPercent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LongPercent" class="control-label"></label>
+                <input asp-for="LongPercent" class="form-control" />
+                <span asp-validation-for="LongPercent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create Report" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

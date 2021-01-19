@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\bin\Debug\netcoreapp3.1\COT-Projects.Business.deps.json
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\bin\Debug\netcoreapp3.1\COT-Projects.Business.dll
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\bin\Debug\netcoreapp3.1\COT-Projects.Business.pdb
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\bin\Debug\netcoreapp3.1\COT-Projects.Data.dll
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\bin\Debug\netcoreapp3.1\COT-Projetcs.Service.dll
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\bin\Debug\netcoreapp3.1\COT-Projects.Data.pdb
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\bin\Debug\netcoreapp3.1\COT-Projetcs.Service.pdb
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\obj\Debug\netcoreapp3.1\COT-Projects.Business.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\obj\Debug\netcoreapp3.1\COT-Projects.Business.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\obj\Debug\netcoreapp3.1\COT-Projects.Business.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\obj\Debug\netcoreapp3.1\COT-Projects.Business.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\obj\Debug\netcoreapp3.1\COT-Projects.Business.csproj.CopyComplete
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\obj\Debug\netcoreapp3.1\COT-Projects.Business.dll
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\obj\Debug\netcoreapp3.1\COT-Projects.Business.pdb
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\bin\Debug\netcoreapp3.1\COT-Projects.Model.dll
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Business\bin\Debug\netcoreapp3.1\COT-Projects.Model.pdb

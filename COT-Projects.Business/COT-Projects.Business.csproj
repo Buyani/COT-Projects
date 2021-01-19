@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>COT_Projects.Business</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\COT-Projects.Data\COT-Projects.Data.csproj" />
+    <ProjectReference Include="..\COT-Projects.Model\COT-Projects.Model.csproj" />
+    <ProjectReference Include="..\COT-Projetcs.Service\COT-Projetcs.Service.csproj" />
+  </ItemGroup>
+
+</Project>

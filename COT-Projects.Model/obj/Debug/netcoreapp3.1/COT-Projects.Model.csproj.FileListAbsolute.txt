@@ -1,0 +1,8 @@
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Model\bin\Debug\netcoreapp3.1\COT-Projects.Model.deps.json
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Model\bin\Debug\netcoreapp3.1\COT-Projects.Model.dll
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Model\bin\Debug\netcoreapp3.1\COT-Projects.Model.pdb
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Model\obj\Debug\netcoreapp3.1\COT-Projects.Model.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Model\obj\Debug\netcoreapp3.1\COT-Projects.Model.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Model\obj\Debug\netcoreapp3.1\COT-Projects.Model.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Model\obj\Debug\netcoreapp3.1\COT-Projects.Model.dll
+C:\Users\Admin\Desktop\Dev\COT-Projects\COT-Projects.Model\obj\Debug\netcoreapp3.1\COT-Projects.Model.pdb
