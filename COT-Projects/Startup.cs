@@ -28,7 +28,7 @@ namespace COT_Projects
         public void ConfigureServices(IServiceCollection services)
         {
             //Register aoutomappers here
-            services.AddAutoMapper(typeof(AutoMapping));
+            services.AddAutoMapper(typeof(Startup));
             //register services here
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<IReportRepository, ReportRepository>();

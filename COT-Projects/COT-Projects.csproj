@@ -30,4 +30,8 @@
     <ProjectReference Include="..\COT-Projetcs.Service\COT-Projetcs.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\theme\" />
+  </ItemGroup>
+
 </Project>

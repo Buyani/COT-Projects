@@ -4,81 +4,79 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="panel panel-headline">
+    <div class="panel-heading">
+        <h3 class="panel-title">reports list</h3>
+        <div class="panel-body">
+            <p class="pull-right">
+                <a asp-action="Create" class="btn btn-primary">new report</a>
+            </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.DateCreated)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Short)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Long)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ChangeShort)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ChangeLong)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Netpositions)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ShortPercent)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LongPercent)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateCreated)
+                        </td>
+                        <td>/
+                            @Html.DisplayFor(modelItem => item.Short)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Long)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChangeShort)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChangeLong)
+                        </td>
 
-<h1>Index</h1>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Netpositions)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ShortPercent)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LongPercent)
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+     </div>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Short)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Long)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ChangeShort)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ChangeLong)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateCreated)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Netpositions)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ShortPercent)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LongPercent)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Short)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Long)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ChangeShort)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ChangeLong)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateCreated)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Netpositions)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShortPercent)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LongPercent)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+

@@ -5,8 +5,4 @@
     <RootNamespace>COT_Projects.Model</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
-
 </Project>

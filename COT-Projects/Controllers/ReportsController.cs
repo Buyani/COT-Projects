@@ -29,11 +29,11 @@ namespace COT_Projects.Controllers
         {
             this.reportbusiness = reportbusiness;
         }
-        //public async Task<ActionResult> Index()
-        //{
-        //    var list = await reportbusiness.GetAllReportsAsync();
-        //    return View(list);
-        //}
+        public async Task<ActionResult> Index()
+        {
+            var list = await reportbusiness.GetAllReportsAsync();
+            return View(list);
+        }
         // GET: ReportsController/Create
         public ActionResult CreateReport()
         {
@@ -44,7 +44,7 @@ namespace COT_Projects.Controllers
         // POST: ReportsController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> CreateReport(ReportModel data)
+        public async Task<ActionResult> CreateReport(Report data)
         {
             try
             {
