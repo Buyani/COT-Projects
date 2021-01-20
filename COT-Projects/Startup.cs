@@ -70,7 +70,7 @@ namespace COT_Projects
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Reports}/{action=CreateReport}/{id?}");
+                    pattern: "{controller=Reports}/{action=Index}/{id?}");
             });
         }
     }
