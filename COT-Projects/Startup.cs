@@ -40,6 +40,7 @@ namespace COT_Projects
                     Configuration.GetConnectionString("CotConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<COT_ProjectDataContext>();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
       

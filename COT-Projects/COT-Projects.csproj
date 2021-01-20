@@ -25,9 +25,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\COT-Projects.Business\COT-Projects.Business.csproj" />
     <ProjectReference Include="..\COT-Projects.Data\COT-Projects.Data.csproj" />
     <ProjectReference Include="..\COT-Projetcs.Service\COT-Projetcs.Service.csproj" />
+    
   </ItemGroup>
 
   <ItemGroup>

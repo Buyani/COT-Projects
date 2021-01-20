@@ -1,10 +1,8 @@
 ﻿@model COT_Projects.Model.Models.ReportModel
-
 @{
     ViewData["Title"] = "CreateReport";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <div class="panel panel-headline">
     <div class="panel-heading">
         <h3 class="panel-title">create new report</h3>
@@ -12,7 +10,7 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-10 mx-auto">
-                        <form>
+                        <form asp-action="CreateReport">
                             <div class="form-group row">
                                 <div class="col-sm-6">
                                     <label asp-for="Short" class="control-label"></label>
@@ -60,7 +58,7 @@
                                     <div class="col-sm-6">
                                         <input type="submit" value="Create Report" class="btn btn-primary" />
                                     </div>
-                                    <div >
+                                    <div>
                                         <a asp-action="Index" class="btn btn-success">reports list</a>
                                     </div>
                                 </div>
@@ -77,4 +75,6 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
 
