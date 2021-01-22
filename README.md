@@ -1,5 +1,5 @@
 
-![Dashboard](https://github.com/Buyani/COT-Projects/img/layout.PNG)
+![Dashboard](https://github.com/Buyani/COT-Projects/blob/master/img/layout.PNG)
 
 # COT Project
 
