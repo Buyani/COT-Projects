@@ -31,7 +31,8 @@ COT Project support CRUD operations for cot reports for forex anlysis ,howerver 
 - In package manager console run the following commands 
     ```
 	-Add-Migration InitialCreate or use any name you like
+	-Update-database 
    ```
 - Run the project start adding cot reports
 
-#  Not much validation has beeen done in this project its only client side validation on user side so any values will go through in the form 
+#  Not much validation has been done in this project 
