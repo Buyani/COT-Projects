@@ -37,7 +37,7 @@
                             <div class="form-group row">
                                 <div class="col-sm-6">
                                     <label asp-for="DateCreated" class="control-label"></label>
-                                    <input asp-for="DateCreated" class="form-control" />
+                                    <input asp-for="DateCreated" class="form-control date" type="date" />
                                     <span asp-validation-for="DateCreated" class="text-danger"></span>
                                 </div>
                                 <div class="col-sm-6">
@@ -74,7 +74,36 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+    $(document).ready(function () {
+
+        $('.date').datepicker({
+            minDate: 0,
+            format: "dd/mm/yyyy",
+            todayHighlight: true,
+            clearBtn: true,
+            orientation: "bottom left",
+            autoclose: true
+        });
+        $('.time').clockpicker({
+            placement: 'bottom',
+            align: 'left',
+            donetext: 'Done',
+            twentyfourhour: true
+        });
+
+        jQuery.validator.methods.date = function (value, element) {
+            var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            if (isChrome) {
+                var d = new Date();
+                return this.optional(element) || !/Invalid|NaN/.test(new Date(d.toLocaleDateString(value)));
+            } else {
+                return this.optional(element) || !/Invalid|NaN/.test(new Date(value));
+            }
+        };</script>
 }
+
 
 
 

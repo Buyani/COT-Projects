@@ -46,10 +46,9 @@
                     @foreach (var item in Model)
                     {
                     <tr>
+                        <td>@item.DateCreated.ToString("MMM")-@item.DateCreated.ToString("d ")-@item.DateCreated.ToString("yyyy")</td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.DateCreated)
-                        </td>
-                        <td>/
+                            /
                             @Html.DisplayFor(modelItem => item.Short)
                         </td>
                         <td>
@@ -61,15 +60,14 @@
                         <td>
                             @Html.DisplayFor(modelItem => item.ChangeLong)
                         </td>
-
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Netpositions)
-                        </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.ShortPercent)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.LongPercent)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Netpositions)
                         </td>
                     </tr>
                     }

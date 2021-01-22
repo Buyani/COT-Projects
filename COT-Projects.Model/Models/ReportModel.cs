@@ -22,6 +22,7 @@ namespace COT_Projects.Model.Models
         [Required]
         [DataType(DataType.Date)]
         [Display(Name = "Release Date")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MMM/yyyy}")]
         public DateTime DateCreated { get; set; }
         [Required]
         [Display(Name = "Short %")]
