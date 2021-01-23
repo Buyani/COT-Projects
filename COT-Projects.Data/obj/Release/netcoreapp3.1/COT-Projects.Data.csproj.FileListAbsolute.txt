@@ -1,0 +1,11 @@
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\bin\Release\netcoreapp3.1\COT-Projects.Data.deps.json
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\bin\Release\netcoreapp3.1\COT-Projects.Data.runtimeconfig.json
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\bin\Release\netcoreapp3.1\COT-Projects.Data.runtimeconfig.dev.json
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\bin\Release\netcoreapp3.1\COT-Projects.Data.dll
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\bin\Release\netcoreapp3.1\COT-Projects.Data.pdb
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\obj\Release\netcoreapp3.1\COT-Projects.Data.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\obj\Release\netcoreapp3.1\COT-Projects.Data.AssemblyInfo.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\obj\Release\netcoreapp3.1\COT-Projects.Data.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\obj\Release\netcoreapp3.1\COT-Projects.Data.dll
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\obj\Release\netcoreapp3.1\COT-Projects.Data.pdb
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects.Data\obj\Release\netcoreapp3.1\COT-Projects.Data.genruntimeconfig.cache
