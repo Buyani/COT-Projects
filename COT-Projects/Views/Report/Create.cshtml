@@ -1,0 +1,76 @@
+﻿@model COT_Projects.Model.Models.ReportModel
+
+<h4>ReportModel</h4>
+<hr />
+<div class="row">
+
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Short" class="control-label"></label>
+                <input asp-for="Short" class="form-control" />
+                <span asp-validation-for="Short" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Long" class="control-label"></label>
+                <input asp-for="Long" class="form-control" />
+                <span asp-validation-for="Long" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChangeShort" class="control-label"></label>
+                <input asp-for="ChangeShort" class="form-control" />
+                <span asp-validation-for="ChangeShort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChangeLong" class="control-label"></label>
+                <input asp-for="ChangeLong" class="form-control" />
+                <span asp-validation-for="ChangeLong" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="DateCreated" class="control-label"></label>
+                <input asp-for="DateCreated" class="form-control" />
+                <span asp-validation-for="DateCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortPercent" class="control-label"></label>
+                <input asp-for="ShortPercent" class="form-control" />
+                <span asp-validation-for="ShortPercent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LongPercent" class="control-label"></label>
+                <input asp-for="LongPercent" class="form-control" />
+                <span asp-validation-for="LongPercent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CurrencyId" class="control-label"></label>
+                @Html.DropDownListFor(m => m.CurrencyId,
+                                  new SelectList(Model.Currencies, "Id", "Name"),
+                                  "Select Currency",
+                                  new { @class = "form-control" })
+                <span asp-validation-for="CurrencyId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary btn-sm" />
+        </div>
+    </form>
+
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+
+

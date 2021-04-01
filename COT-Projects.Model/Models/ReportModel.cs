@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COT_Projects.Model.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -30,5 +31,8 @@ namespace COT_Projects.Model.Models
         [Required]
         [Display(Name = "Long %")]
         public int LongPercent { get; set; }
+
+        public int CurrencyId { get; set; }
+        public ICollection<CurrencyModelView> Currencies { get; set; }
     }
 }

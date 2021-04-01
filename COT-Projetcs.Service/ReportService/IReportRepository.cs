@@ -5,11 +5,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace COT_Projetcs.Service.ReportRepository
+namespace COT_Projetcs.Service.ReportService
 {
     public interface IReportRepository : IRepository<Report>
     {
-        Task<Report> GetReportByIdAsync(int id);
-        Task<List<Report>> GetAllReportsAsync();
     }
 }

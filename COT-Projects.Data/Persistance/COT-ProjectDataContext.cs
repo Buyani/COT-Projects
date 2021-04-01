@@ -21,6 +21,7 @@ namespace COT_Projects.Data.Persistance
 
         //Initialize entities
         public DbSet<Report> Reports{ get; set; }
+        public DbSet<Currency> Currency { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

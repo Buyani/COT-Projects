@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace COT_Projetcs.Service.ReportRepository
+namespace COT_Projetcs.Service.ReportService
 {
     public class ReportRepository : Repository<Report>, IReportRepository
     {
@@ -15,13 +15,6 @@ namespace COT_Projetcs.Service.ReportRepository
             : base(context)
         {
         }
-        public async Task<List<Report>> GetAllReportsAsync()
-        {
-            return await GetAll().ToListAsync();
-        }
-        public async Task<Report> GetReportByIdAsync(int id)
-        {
-            return await GetAll().FirstOrDefaultAsync(p => p.Id.Equals(id));
-        }
+
     }
 }

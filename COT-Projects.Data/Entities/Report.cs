@@ -15,10 +15,8 @@ namespace COT_Projects.Data.Entities
         public int Netpositions { get; set; }
         public int ShortPercent { get; set; }
         public int LongPercent { get; set; }
+        public int CurrencyId { get; set; }
+        public virtual Currency Currency { get; set; }
 
-        public Report()
-        {
-            this.Netpositions = this.Long - this.Short;
-        }
     }
 }

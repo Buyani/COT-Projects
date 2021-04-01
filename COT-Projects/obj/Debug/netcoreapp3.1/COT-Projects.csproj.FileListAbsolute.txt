@@ -350,3 +350,6 @@ C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\bin\Debug\netcoreapp3.1\CO
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\bin\Debug\netcoreapp3.1\COT-Projects.Model.pdb
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Reports\CreateReport.cshtml.g.cs
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Reports\Index.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Currency\CreateCurrnecy.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Report\Create.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Reports.cshtml.g.cs

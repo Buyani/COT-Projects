@@ -7,11 +7,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using COT_Projetcs.Service.ReportRepository;
 using COT_Projetcs.Service;
-using COT_Projects.Business.ReportBusiness;
 using AutoMapper;
 using COT_Projects.Business.DataMappers;
+using COT_Projetcs.Service.ReportService;
+using COT_Projetcs.Service.CurrencyService;
+using COT_Projects.Business.CurrencyBusiness;
+using COT_Projects.Business.ReportBusiness;
 
 namespace COT_Projects
 {
@@ -28,11 +30,14 @@ namespace COT_Projects
         public void ConfigureServices(IServiceCollection services)
         {
             //Register aoutomappers here
-            services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(AutoMapping));
             //register services here
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
-            services.AddTransient<IReportRepository, ReportRepository>();
-            services.AddTransient<IReportBusiness, ReportBusiness>();
+            services.AddTransient<ICurrencyRepository, CurrencyRepository>();
+            services.AddTransient<ICurrencyBusiness, CurrencyBusiness>();
+            services.AddScoped<IReportRepository, ReportRepository>();
+            services.AddScoped<IReportBusiness, ReportBusiness>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             //*
 
             services.AddDbContext<COT_ProjectDataContext>(options =>
@@ -40,7 +45,6 @@ namespace COT_Projects
                     Configuration.GetConnectionString("CotConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<COT_ProjectDataContext>();
-
             services.AddControllersWithViews();
             services.AddRazorPages();
       
@@ -70,7 +74,7 @@ namespace COT_Projects
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Reports}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

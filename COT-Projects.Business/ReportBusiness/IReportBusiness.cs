@@ -1,5 +1,5 @@
-﻿using COT_Projects.Data.Entities;
-using COT_Projects.Model.Models;
+﻿using COT_Projects.Model.Models;
+using COT_Projects.Model.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace COT_Projects.Business.ReportBusiness
 {
-    public interface IReportBusiness 
+    public interface IReportBusiness
     {
-        Task<List<Report>> GetAllReportsAsync();
-        Task<Report> GetReportByIdAsync(int id);
-        Task<Report> AddReportAsync(Report newreport);
+        List<ReportViewModel> GetAllReportsAsyncByCurrency(int currencyid);
+        Task AddReportAsync(ReportModel model);
     }
 }
