@@ -18,6 +18,7 @@ COT Project support CRUD operations for cot reports for forex anlysis ,howerver 
 2. Repository Pattern
 2. Entity Framework .Net Core 3.1.0
 4. Automapper
+5. UnitOfWork
 
 # Running Project
 
