@@ -22,3 +22,15 @@ C:\Users\Admin\Source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcorea
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.csproj.CopyComplete
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.dll
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.pdb
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\bin\Debug\netcoreapp3.1\COT-Projetcs.Service.deps.json
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\bin\Debug\netcoreapp3.1\COT-Projetcs.Service.dll
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\bin\Debug\netcoreapp3.1\COT-Projetcs.Service.pdb
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\bin\Debug\netcoreapp3.1\COT-Projects.Data.dll
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\bin\Debug\netcoreapp3.1\COT-Projects.Data.pdb
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.csprojAssemblyReference.cache
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.AssemblyInfoInputs.cache
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.AssemblyInfo.cs
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.csproj.CoreCompileInputs.cache
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.csproj.CopyComplete
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.dll
+C:\Users\Buyani\source\repos\COT-Projects\COT-Projetcs.Service\obj\Debug\netcoreapp3.1\COT-Projetcs.Service.pdb

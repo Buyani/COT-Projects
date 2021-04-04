@@ -7,7 +7,7 @@ using System.Text;
 
 namespace COT_Projects.Data.Persistance
 {
-    public partial class COT_ProjectDataContext : IdentityDbContext<ApplicationUser>
+    public partial class COT_ProjectDataContext : IdentityDbContext
     {
 
         public COT_ProjectDataContext()

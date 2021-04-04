@@ -1,6 +1,7 @@
 ﻿using COT_Projects.Business.CurrencyBusiness;
 using COT_Projects.Business.ReportBusiness;
 using COT_Projects.Model.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace COT_Projects.Controllers
 {
+    [Authorize]
     public class ReportController : Controller
     {
         private readonly IReportBusiness _reportbusiness;

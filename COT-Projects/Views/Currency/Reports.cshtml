@@ -1,16 +1,25 @@
 ﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<select id="ddlReports">
-    <option value="">Select Currency</option>
-    @foreach (var item in Model.Currencies)
-    {
-        <option value="@item.Id">@item.Name</option>
-    }
-</select>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<table id="tblReports">
+<div class="row">
+    <select id="ddlReports" au>
+        <option value="">Select Currency</option>
+        @foreach (var item in Model.Currencies)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+</div>
+<div class="row">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <table id="tblReports" class="table table-bordered table-striped table-responsive table-hover">
         <tr>
             <th>
                 Date
@@ -38,39 +47,54 @@
                 Net Positions
             </th>
         </tr>
-</table>
-<script>
-    $(function () {
-        $("#ddlReports").change(function () {
-            var pid = $(this).val();
-            $.ajax({
-                type: "GET",
-                url: "/Currency/GetReportDataJson?currencyid=" + pid,
-                contentType: "application/json",
-                dataType: "JSON",
-                success: function (result) {
-
-                    alert(JSON.stringify(result, null, 2));
-                    var table = $('#tblReports');
-                    var trr = $('<tr/>');
-                    $("#tblReports").empty();
-                    $.each(result, function (key, data) {
-
-                        $(trr).append("<td>" + data.DateCreated + "</td>"
-                            + "<td>" + data.Long + "</td>"
-                            + "<td>" + data.Short + "</td>"
-                            + "<td>" + data.ChangeLong + "</td>"
-                            + "<td>" + data.ChangeShort + "</td>"
-                            + "<td>" + data.LongPercent + "</td>"
-                            + "<td>" + data.ShortPercent + "</td>"
-                            + "<td>" + data.Netpositions + "</td>")
-                        $(table).append(trr);
-                    });
-                },
-                error: function (errormessage) {
-                    alert(errormessage.responseText);
-                }
+        <tbody>
+        </tbody>
+    </table>
+    <script>
+        $(function () {
+            $("#ddlReports").change(function () {
+                var pid = $(this).val();
+                $.ajax({
+                    type: "GET",
+                    url: "/Currency/GetReportDataJson?currencyid=" + pid,
+                    contentType: "application/json",
+                    dataType: "JSON",
+                    success: function (result) {
+                        for (var i = 0; i < result.length; i++) {
+                            alert(result.length);
+                            var rows = "<tr>"
+                                + "<td class='prtoducttd' >" + result[i].dateCreated + "</td>"
+                                + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].long) + "'>" + result[i].long + "</td>"
+                                + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].short) + "'>" + result[i].short + "</td>"
+                                + "<td class='prtoducttd' >" + result[i].changeLong + "</td>"
+                                + "<td class='prtoducttd' >" + result[i].changeShort + "</td>"
+                                + "<td class='prtoducttd' >" + result[i].longPercent + "</td>"
+                                + "<td class='prtoducttd' >" + result[i].shortPercent + "</td>"
+                                + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].netpositions) + "'>" + result[i].netpositions + "</td>"
+                                + "</tr>";
+                            $('#tblReports tbody').append(rows);
+                        }
+                    },
+                    error: function (errormessage) {
+                        alert(errormessage.responseText);
+                    }
+                });
             });
         });
-    });
-</script>
+
+        function ColorCoder(value) {
+            var color = "";
+            if (value > 50000) {
+                color = "#ffe6e6";
+            }
+            else if (value < 50000) {
+                color = "#ff0000";
+            }
+            else {
+                color = "#00e600";
+            }
+            return color;
+        }
+    </script>
+</div>
+

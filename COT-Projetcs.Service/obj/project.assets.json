@@ -5878,25 +5878,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Buyani\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
       "projectName": "COT-Projetcs.Service",
-      "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\obj\\",
+      "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
+      "packagesPath": "C:\\Users\\Buyani\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Buyani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5911,8 +5909,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
+            "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
+              "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
             }
           }
         }

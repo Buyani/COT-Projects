@@ -1,29 +1,49 @@
-﻿using COT_Projects.Data.Entities;
-using COT_Projects.Model.Models;
+﻿using COT_Projects.Model.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace COT_Projects.Business.AccountBusiness
 {
-    public class RegisterBusiness
+    public class RegisterBusiness: IRegisterBusiness
     {
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly ILogger _logger;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly RoleManager<IdentityUser> _roleManager;
 
-
-        public RegisterBusiness(UserManager<ApplicationUser> userMananger, SignInManager<ApplicationUser> signInManager, ILogger logger)
+        public RegisterBusiness(UserManager<IdentityUser> userManager,
+                              SignInManager<IdentityUser> signInManager)
         {
-            _userManager = userMananger;
+            _userManager = userManager;
             _signInManager = signInManager;
-            _logger = logger;
         }
+        public async Task<RegistrationToken> Register(RegisterViewModel model)
+        {
+            var user = new IdentityUser {UserName = model.Email,Email = model.Email,EmailConfirmed=true};
+            var token = new RegistrationToken();
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (result.Succeeded)
+            {
+                //await _signInManager.SignInAsync(user, isPersistent: false);
+                token.Results = true;
+                token.EmailConfimationToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                token.User = user;
+            }
+            return token;
+        }
+        public async Task<bool> FindUser(string userName)
+        {
+            var user =await _userManager.FindByNameAsync(userName);
 
-
-
+            if(user!=null)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
+

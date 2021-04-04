@@ -14,6 +14,7 @@ using COT_Projetcs.Service.ReportService;
 using COT_Projetcs.Service.CurrencyService;
 using COT_Projects.Business.CurrencyBusiness;
 using COT_Projects.Business.ReportBusiness;
+using COT_Projects.Business.AccountBusiness;
 
 namespace COT_Projects
 {
@@ -37,6 +38,8 @@ namespace COT_Projects
             services.AddTransient<ICurrencyBusiness, CurrencyBusiness>();
             services.AddScoped<IReportRepository, ReportRepository>();
             services.AddScoped<IReportBusiness, ReportBusiness>();
+            services.AddScoped<ILogInBusiness, LogInBusiness>();
+            services.AddScoped<IRegisterBusiness, RegisterBusiness>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             //*
 
@@ -45,9 +48,19 @@ namespace COT_Projects
                     Configuration.GetConnectionString("CotConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<COT_ProjectDataContext>();
+
+            services.Configure<PasswordHasherOptions>(options =>
+                options.CompatibilityMode = PasswordHasherCompatibilityMode.IdentityV3);
             services.AddControllersWithViews();
             services.AddRazorPages();
-      
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = $"/account/login";
+                options.LogoutPath = $"/account/logout";
+                options.AccessDeniedPath = $"/account/accessDenied";
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -74,7 +87,7 @@ namespace COT_Projects
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Currency}/{action=Reports}/{id?}");
             });
         }
     }
