@@ -31,7 +31,7 @@ namespace COT_Projects.Business.ReportBusiness
         public List<ReportViewModel> GetAllReportsAsyncByCurrency(int currencyid)
         {
             var list = _unitOfWork.Reports.GetAll();
-            return list.Select(_mapper.Map<Report, ReportViewModel>).ToList();
+            return list.Where(p=>p.CurrencyId.Equals(currencyid)).Select(_mapper.Map<Report, ReportViewModel>).ToList();
         }
 
         private static int GetNetPositions(int longp,int shortp)

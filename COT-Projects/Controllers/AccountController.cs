@@ -15,10 +15,12 @@ namespace COT_Projects.Controllers
     {
         private readonly IRegisterBusiness _registerbusiness;
         private readonly ILogInBusiness _loginbusiness;
-        public AccountController(IRegisterBusiness registerbusiness, ILogInBusiness loginbusiness)
+        private readonly IRolesBusiness _rolebusiness;
+        public AccountController(IRolesBusiness rolebusiness,IRegisterBusiness registerbusiness, ILogInBusiness loginbusiness)
         {
             _registerbusiness = registerbusiness;
             _loginbusiness = loginbusiness;
+            _rolebusiness = rolebusiness;
 
         }
         public IActionResult Register()
@@ -86,6 +88,29 @@ namespace COT_Projects.Controllers
                 }
             }
 
+            return View(model);
+        }
+        public async Task<IActionResult> Roles()
+        {
+            var roles = await _rolebusiness.RolesList();
+            return View(roles);
+        }
+
+        public IActionResult CreateRole()
+        {
+            return View();
+        }
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> CreateRole(RoleModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                await _rolebusiness.AddRole(model);
+                return RedirectToAction("Reports", "Currency");
+            }
             return View(model);
         }
 

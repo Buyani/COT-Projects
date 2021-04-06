@@ -27,7 +27,6 @@ C:\Users\Buyani\source\repos\COT-Projects\COT-Projects.Data\bin\Debug\netcoreapp
 C:\Users\Buyani\source\repos\COT-Projects\COT-Projects.Data\bin\Debug\netcoreapp3.1\COT-Projects.Data.runtimeconfig.dev.json
 C:\Users\Buyani\source\repos\COT-Projects\COT-Projects.Data\bin\Debug\netcoreapp3.1\COT-Projects.Data.dll
 C:\Users\Buyani\source\repos\COT-Projects\COT-Projects.Data\bin\Debug\netcoreapp3.1\COT-Projects.Data.pdb
-C:\Users\Buyani\source\repos\COT-Projects\COT-Projects.Data\obj\Debug\netcoreapp3.1\COT-Projects.Data.csprojAssemblyReference.cache
 C:\Users\Buyani\source\repos\COT-Projects\COT-Projects.Data\obj\Debug\netcoreapp3.1\COT-Projects.Data.AssemblyInfoInputs.cache
 C:\Users\Buyani\source\repos\COT-Projects\COT-Projects.Data\obj\Debug\netcoreapp3.1\COT-Projects.Data.AssemblyInfo.cs
 C:\Users\Buyani\source\repos\COT-Projects\COT-Projects.Data\obj\Debug\netcoreapp3.1\COT-Projects.Data.csproj.CoreCompileInputs.cache

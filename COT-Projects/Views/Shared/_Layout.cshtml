@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>@ViewData["Title"] -10 trades</title>
+    <title>-10 trades</title>
+    <link rel="shortcut icon" type="image/jpg" href="~/assets/img/favicon.ico" />
     <link href="~/theme/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/theme/assets/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="~/theme/assets/vendor/linearicons/style.css" rel="stylesheet" />
@@ -16,8 +17,7 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <!-- ICONS -->
-    <link rel="apple-touch-icon" sizes="76x76" href="~/theme/assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="~/theme/assets/img/favicon.png">
+
 </head>
 <body>
     <div id="wrapper">
@@ -42,8 +42,9 @@
                 <nav>
                     <ul class="nav">
                         <li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-                        <li><a href="@Url.Action("CreateCurrnecy", "Currency")" class=""><i class="lnr lnr-cog"></i> <span>New Currency</span></a></li>
-                        <li><a href="@Url.Action("Reports", "Currency")" class=""><i class="lnr lnr-cog"></i> <span>Cot Reports</span></a></li>
+                        <li><a href="@Url.Action("CreateCurrnecy", "Currency")" class=""><i class="lnr lnr-menu"></i> <span>New Currency</span></a></li>
+                        <li><a href="@Url.Action("Reports", "Currency")" class=""><i class="lnr lnr-book"></i> <span>Cot Reports</span></a></li>
+                        <li><a href="@Url.Action("Roles", "Account")" class=""><i class="lnr lnr-users"></i> <span>Roles</span></a></li>
                     </ul>
                 </nav>
             </div>

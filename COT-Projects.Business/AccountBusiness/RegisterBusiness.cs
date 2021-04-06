@@ -1,4 +1,5 @@
-﻿using COT_Projects.Model.Models;
+﻿using COT_Projects.Data.Entities;
+using COT_Projects.Model.Models;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -11,18 +12,14 @@ namespace COT_Projects.Business.AccountBusiness
     public class RegisterBusiness: IRegisterBusiness
     {
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly RoleManager<IdentityUser> _roleManager;
 
-        public RegisterBusiness(UserManager<IdentityUser> userManager,
-                              SignInManager<IdentityUser> signInManager)
+        public RegisterBusiness(UserManager<IdentityUser> userManager)
         {
             _userManager = userManager;
-            _signInManager = signInManager;
         }
         public async Task<RegistrationToken> Register(RegisterViewModel model)
         {
-            var user = new IdentityUser {UserName = model.Email,Email = model.Email,EmailConfirmed=true};
+            var user = new ApplicationUser {FirstName=model.FirstName,LastName=model.LastName,UserName = model.Email,Email = model.Email,EmailConfirmed=true};
             var token = new RegistrationToken();
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)

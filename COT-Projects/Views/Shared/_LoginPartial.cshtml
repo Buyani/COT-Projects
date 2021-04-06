@@ -2,17 +2,17 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
-        @if (SignInManager.IsSignedIn(User))
-        {
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>administrator</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="@Url.Action("LogIn", "Account", new { area = "" })"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
-                    </ul>
-                </li>
+@if (SignInManager.IsSignedIn(User))
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>@User.Identity.Name.ToString().Split('@')[0]</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="@Url.Action("LogIn", "Account", new { area = "" })"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
             </ul>
-        }
+        </li>
+    </ul>
+}
 
 
 

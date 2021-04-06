@@ -54,7 +54,7 @@ namespace COT_Projects.Controllers
                 {
                     await _currencybusiness.AddCurrencyAsync(model);
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Reports));
             }
             catch
             {

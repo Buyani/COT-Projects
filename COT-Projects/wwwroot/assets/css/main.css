@@ -1014,14 +1014,15 @@ ul.activity-list > li {
       content: ' ';
       vertical-align: middle;
       height: 100%; }
-  .auth-box .right {
-    float: right;
-    width: 58%;
-    height: 100%;
-    position: relative;
-    background-image: url("../../assets/img/login-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
+    .auth-box .right {
+        float: right;
+        width: 58%;
+        height: 100%;
+        position: relative;
+        background-image: url('../../assets\img\first.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .auth-box .right:before {
       display: inline-block;
       vertical-align: middle;
@@ -1177,7 +1178,6 @@ ul.activity-list > li {
   .profile-header .profile-main {
     position: relative;
     padding: 20px;
-    background-image: url("../../assets/img/profile-bg.png");
     background-repeat: no-repeat;
     background-size: cover; }
   .profile-header .name {
