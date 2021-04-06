@@ -348,8 +348,6 @@ C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\bin\Debug\netcoreapp3.1\CO
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\bin\Debug\netcoreapp3.1\COT-Projects.Business.pdb
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\bin\Debug\netcoreapp3.1\COT-Projetcs.Service.pdb
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\bin\Debug\netcoreapp3.1\COT-Projects.Model.pdb
-C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Reports\CreateReport.cshtml.g.cs
-C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Reports\Index.cshtml.g.cs
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Currency\CreateCurrnecy.cshtml.g.cs
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Report\Create.cshtml.g.cs
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Reports.cshtml.g.cs
@@ -536,3 +534,11 @@ C:\Users\Buyani\source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\C
 C:\Users\Buyani\source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\COT-Projects.genruntimeconfig.cache
 C:\Users\Buyani\source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Account\CreateRole.cshtml.g.cs
 C:\Users\Buyani\source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Account\Roles.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Account\CreateRole.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Account\LogIn.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Account\Roles.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_First.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Currencies.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Account\Profile.cshtml.g.cs

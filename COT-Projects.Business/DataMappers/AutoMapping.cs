@@ -2,6 +2,7 @@
 using COT_Projects.Data.Entities;
 using COT_Projects.Model.Models;
 using COT_Projects.Model.ViewModels;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,6 +20,9 @@ namespace COT_Projects.Business.DataMappers
             CreateMap<CurrencyModel, Currency>();
 
             CreateMap<Currency, CurrencyModelView>();
+
+
+            CreateMap<IdentityUser, UserViewModel>();
         }
     }
 }

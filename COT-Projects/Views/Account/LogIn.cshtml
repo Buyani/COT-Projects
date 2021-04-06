@@ -9,7 +9,7 @@
 }
 <div class="content">
     <div class="header">
-        <p class="lead">Login to your account</p>
+        <p class="lead">Login to your account OR <a href="@Url.Action("Register", "Account")">Register</a></p>
     </div>
     <form asp-action="LogIn">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -31,7 +31,9 @@
             </div>
         </div>
         <div class="form-group">
-            <input type="submit" value="Log In" class="btn btn-default" />
+            <input type="submit" value="Log In" class="btn btn-default" /> 
+         
+            
         </div>
         <div>
 

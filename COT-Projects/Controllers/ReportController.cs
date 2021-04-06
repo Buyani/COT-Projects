@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace COT_Projects.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class ReportController : Controller
     {
         private readonly IReportBusiness _reportbusiness;

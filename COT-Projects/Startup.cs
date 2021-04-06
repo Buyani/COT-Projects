@@ -15,6 +15,7 @@ using COT_Projetcs.Service.CurrencyService;
 using COT_Projects.Business.CurrencyBusiness;
 using COT_Projects.Business.ReportBusiness;
 using COT_Projects.Business.AccountBusiness;
+using COT_Projects.Data.Entities;
 
 namespace COT_Projects
 {
@@ -42,6 +43,7 @@ namespace COT_Projects
             services.AddScoped<IRegisterBusiness, RegisterBusiness>();
             services.AddScoped<IRolesBusiness, RolesBusiness>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             //*
 
             services.AddDbContext<COT_ProjectDataContext>(options =>
@@ -50,6 +52,8 @@ namespace COT_Projects
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<COT_ProjectDataContext>();
+
+           //services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationClaimsPrincipalFactory>();
 
             services.Configure<PasswordHasherOptions>(options =>
                 options.CompatibilityMode = PasswordHasherCompatibilityMode.IdentityV3);
@@ -67,7 +71,7 @@ namespace COT_Projects
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             if (env.IsDevelopment())
             {
@@ -95,7 +99,11 @@ namespace COT_Projects
                     pattern: "{controller=Currency}/{action=Reports}/{id?}");
                 endpoints.MapRazorPages();
             });
+
+            DbInitializer.SeedUsersAsync(userManager, roleManager).Wait();
         }
     }
 }
+
+            
 

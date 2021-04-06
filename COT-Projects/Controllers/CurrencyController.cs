@@ -24,6 +24,12 @@ namespace COT_Projects.Controllers
             this._currencybusiness = currencybusiness;
             this._reportbusiness = reportbusiness;
         }
+        [Authorize(Roles = "Admin")]
+        public ActionResult Currencies()
+        {
+            var currencieslist = _currencybusiness.GetAllCurrenciesAsync();
+            return View(currencieslist);
+        }
         public ActionResult Reports(int currencyid)
         {
             dynamic mymodel = new ExpandoObject();
@@ -37,6 +43,7 @@ namespace COT_Projects.Controllers
             return Json(data);
         }
         // GET: ReportsController/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult CreateCurrnecy()
         {
             var currency = new CurrencyModel();
@@ -44,6 +51,7 @@ namespace COT_Projects.Controllers
         }
 
         // POST: ReportsController/Create
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> CreateCurrnecy(CurrencyModel model)
@@ -54,7 +62,7 @@ namespace COT_Projects.Controllers
                 {
                     await _currencybusiness.AddCurrencyAsync(model);
                 }
-                return RedirectToAction(nameof(Reports));
+                return RedirectToAction(nameof(Currencies));
             }
             catch
             {

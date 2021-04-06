@@ -79,6 +79,7 @@ namespace COT_Projects.Controllers
                     {
                         return Redirect(returnUrl);
                     }
+                    TempData["message"] = "Hi " + model.Email.ToString().Split("@")[0] + " welcome back";
                     return RedirectToAction("Reports","Currency");
                 }                 
                 else
@@ -133,6 +134,11 @@ namespace COT_Projects.Controllers
             {
                 return RedirectToAction("Reports", "Currency");
             }
+        }
+        public async Task<IActionResult> Profile(string email)
+        {
+            var profile = await _registerbusiness.UserProfile(email);
+            return View(profile);
         }
     }
 }

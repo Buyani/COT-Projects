@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>-10 trades</title>
-    <link rel="shortcut icon" type="image/jpg" href="~/assets/img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="96x96" href="~/theme/assets/img/user.png">
     <link href="~/theme/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/theme/assets/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="~/theme/assets/vendor/linearicons/style.css" rel="stylesheet" />
@@ -41,10 +41,16 @@
             <div class="sidebar-scroll">
                 <nav>
                     <ul class="nav">
-                        <li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-                        <li><a href="@Url.Action("CreateCurrnecy", "Currency")" class=""><i class="lnr lnr-menu"></i> <span>New Currency</span></a></li>
-                        <li><a href="@Url.Action("Reports", "Currency")" class=""><i class="lnr lnr-book"></i> <span>Cot Reports</span></a></li>
-                        <li><a href="@Url.Action("Roles", "Account")" class=""><i class="lnr lnr-users"></i> <span>Roles</span></a></li>
+                        <li><a href="@Url.Action("Index", "Home")" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li><a href="@Url.Action("Currencies", "Currency")" class=""><i class="lnr lnr-menu"></i> <span>Currency</span></a></li>
+                            <li><a href="@Url.Action("Roles", "Account")" class=""><i class="lnr lnr-users"></i> <span>Roles</span></a></li>
+                        }
+                        @if (User.IsInRole("Client") || User.IsInRole("Admin"))
+                        {
+                            <li><a href="@Url.Action("Reports", "Currency")" class=""><i class="lnr lnr-book"></i> <span>Cot Reports</span></a></li>
+                        }
                     </ul>
                 </nav>
             </div>
@@ -54,6 +60,10 @@
             <!-- MAIN CONTENT -->
             <div class="main-content">
                 <div class="container-fluid">
+                    @if (TempData["message"] != null)
+                    {
+                        <div class="alert alert-success">@TempData["message"]</div>
+                    }
                     @RenderBody()
                 </div>
             </div>

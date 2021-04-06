@@ -19,14 +19,20 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <!-- ICONS -->
     <link rel="apple-touch-icon" sizes="76x76" href="~/assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="~/assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/theme/assets/img/user.png">
+
 </head>
 <body>
     <div id="wrapper">
         <div class="vertical-align-wrap">
+            @if (TempData["error"] != null)
+            {
+                <span class="alert alert-danger">@TempData["error"]</span>
+            }
             <div class="vertical-align-middle">
                 <div class="auth-box ">
                     <div class="left">
+
                         @RenderBody()
                     </div>
                     <div class="right">

@@ -1,5 +1,7 @@
-﻿using COT_Projects.Data.Entities;
+﻿using AutoMapper;
+using COT_Projects.Data.Entities;
 using COT_Projects.Model.Models;
+using COT_Projects.Model.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -12,10 +14,12 @@ namespace COT_Projects.Business.AccountBusiness
     public class RegisterBusiness: IRegisterBusiness
     {
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IMapper _mapper;
 
-        public RegisterBusiness(UserManager<IdentityUser> userManager)
+        public RegisterBusiness(UserManager<IdentityUser> userManager, IMapper mapper)
         {
             _userManager = userManager;
+            _mapper = mapper;
         }
         public async Task<RegistrationToken> Register(RegisterViewModel model)
         {
@@ -24,7 +28,9 @@ namespace COT_Projects.Business.AccountBusiness
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
+                await _userManager.AddToRoleAsync(user,"Client");
                 //await _signInManager.SignInAsync(user, isPersistent: false);
+
                 token.Results = true;
                 token.EmailConfimationToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                 token.User = user;
@@ -40,6 +46,11 @@ namespace COT_Projects.Business.AccountBusiness
                 return true;
             }
             return false;
+        }
+
+        public async Task<UserViewModel> UserProfile(string email)
+        {
+            return _mapper.Map<UserViewModel>(await _userManager.FindByEmailAsync(email));
         }
     }
 }

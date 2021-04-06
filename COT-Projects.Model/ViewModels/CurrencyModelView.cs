@@ -8,6 +8,7 @@ namespace COT_Projects.Model.ViewModels
     {
         public string Name { get; set; }
         public int Id { get; set; }
+        public string Description { get; set; }
         public List<ReportViewModel> Reports { get; set; }
     }
 }

@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj": {}
+    "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj": {
+    "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj",
         "projectName": "COT-Projects.Business",
-        "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj",
-        "packagesPath": "C:\\Users\\Buyani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Business\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Buyani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,14 +33,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
-                "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
+              "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
               },
-              "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj": {
-                "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj"
+              "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj"
               },
-              "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
-                "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj"
+              "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj"
               }
             }
           }
@@ -82,20 +83,21 @@
         }
       }
     },
-    "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
+    "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
         "projectName": "COT-Projects.Data",
-        "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
-        "packagesPath": "C:\\Users\\Buyani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Buyani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -160,20 +162,21 @@
         }
       }
     },
-    "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj": {
+    "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj",
         "projectName": "COT-Projects.Model",
-        "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj",
-        "packagesPath": "C:\\Users\\Buyani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Model\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Model\\COT-Projects.Model.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Buyani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -218,20 +221,21 @@
         }
       }
     },
-    "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj": {
+    "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj",
         "projectName": "COT-Projects",
-        "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj",
-        "packagesPath": "C:\\Users\\Buyani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects\\COT-Projects.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Buyani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -246,14 +250,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj": {
-                "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj"
+              "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Business\\COT-Projects.Business.csproj"
               },
-              "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
-                "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
+              "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
               },
-              "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
-                "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj"
+              "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj"
               }
             }
           }
@@ -325,20 +329,21 @@
         }
       }
     },
-    "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
+    "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
         "projectName": "COT-Projetcs.Service",
-        "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
-        "packagesPath": "C:\\Users\\Buyani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projetcs.Service\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\COT-Projetcs.Service.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projetcs.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Buyani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -353,8 +358,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
-                "projectPath": "C:\\Users\\Buyani\\source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
+              "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Source\\repos\\COT-Projects\\COT-Projects.Data\\COT-Projects.Data.csproj"
               }
             }
           }

@@ -4,7 +4,11 @@
     ViewData["Title"] = "Roles";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<style type="text/css">
+    .heads {
+        background-color: #9fdf9f;
+    }
+</style>
 <div class="panel">
     <div class="panel-heading">
         <h3 class="panel-title">Roles</h3>
@@ -16,7 +20,7 @@
     <div class="panel-body no-padding">
         <table id="tblReports" class="table table-bordered table-striped table-responsive table-hover">
             <thead>
-                <tr>
+                <tr class="heads">
                     <th>
                         Id
                     </th>

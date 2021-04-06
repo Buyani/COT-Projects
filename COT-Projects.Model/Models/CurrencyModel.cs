@@ -7,5 +7,6 @@ namespace COT_Projects.Model.Models
     public class CurrencyModel
     {
         public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

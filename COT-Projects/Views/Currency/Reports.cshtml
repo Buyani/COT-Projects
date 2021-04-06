@@ -7,113 +7,180 @@
 
 <style type="text/css">
     .middle {
-        margin: auto;
+        text-align: center
+    }
+
+    .heads {
+        background-color: #9fdf9f;
     }
 </style>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <div class="panel">
-        <div class="panel-heading">
-            <h3 class="panel-title">Reports</h3>
-            <div></div>
-            <select id="ddlReports" class="middle" >
-                <option value="">Select Currency</option>
-                @foreach (var item in Model.Currencies)
-                {
-                    <option value="@item.Id">@item.Name</option>
-                }
-            </select>
-            <div class="right">
-                <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
-            </div>
-        </div>
-        <div class="panel-body no-padding">
-            <table id="tblReports" class="table table-bordered table-striped table-responsive table-hover">
-                <thead>
-                    <tr>
-                        <th>
-                            Date
-                        </th>
-                        <th>
-                            Long
-                        </th>
-                        <th>
-                            Short
-                        </th>
-                        <th>
-                            Change Long
-                        </th>
-                        <th>
-                            Change Short
-                        </th>
-
-                        <th>
-                            Long %
-                        </th>
-                        <th>
-                            Short %
-                        </th>
-                        <th>
-                            Net Positions
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
-        <div class="panel-footer">
-            <div class="row">
-                <div class="col-md-6"><span class="panel-note"><i class="fa fa-clock-o"></i> Last 24 hours</span></div>
-                <div class="col-md-6 text-right"><a href="@Url.Action("Create", "Report")" class="btn btn-primary btn-sm">new report</a></div>
-            </div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<div class="panel">
+    <div class="panel-heading">
+        <h3 class="middle">Reports</h3>
+        <div></div>
+        <select id="ddlReports" class="middle col-md-1">
+            <option value="">Select Currency</option>
+            @foreach (var item in Model.Currencies)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+        <select id="ddlReports2" class="middle col-md-2">
+            <option value="">Select Currency</option>
+            @foreach (var item in Model.Currencies)
+            {
+                <option value="@item.Id">@item.Description</option>
+            }
+        </select>
+        <div class="right">
+            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+            <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
         </div>
     </div>
-    <script>
-        $(function () {
-            $("#ddlReports").change(function () {
-                var pid = $(this).val();
-                $.ajax({
-                    type: "GET",
-                    url: "/Currency/GetReportDataJson?currencyid=" + pid,
-                    contentType: "application/json",
-                    dataType: "JSON",
-                    success: function (result) {
-                        $('#tblReports > tbody').empty();
-                        for (var i = 0; i < result.length; i++) {
-                            var rows = "<tr>"
-                                + "<td class='prtoducttd' >" + result[i].dateCreated + "</td>"
-                                + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].long) + "'>" + result[i].long + "</td>"
-                                + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].short) + "'>" + result[i].short + "</td>"
-                                + "<td class='prtoducttd' >" + result[i].changeLong + "</td>"
-                                + "<td class='prtoducttd' >" + result[i].changeShort + "</td>"
-                                + "<td class='prtoducttd' >" + result[i].longPercent + "</td>"
-                                + "<td class='prtoducttd' >" + result[i].shortPercent + "</td>"
-                                + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].netpositions) + "'>" + result[i].netpositions + "</td>"
-                                + "</tr>";
-                            $('#tblReports tbody').append(rows);
-                        }
-                    },
-                    error: function (errormessage) {
-                        alert(errormessage.responseText);
+    <div class="panel-body no-padding">
+        <table id="tblReports" class="table table-bordered table-striped table-responsive table-hover">
+            <thead>
+                <tr class="heads">
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Long
+                    </th>
+                    <th>
+                        Short
+                    </th>
+                    <th>
+                        Change Long
+                    </th>
+                    <th>
+                        Change Short
+                    </th>
+
+                    <th>
+                        Long %
+                    </th>
+                    <th>
+                        Short %
+                    </th>
+                    <th>
+                        Net Positions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="panel-footer">
+        <div class="row">
+            <div class="col-md-6"><span class="panel-note"><i class="fa fa-clock-o"></i> Last 24 hours</span></div>
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="col-md-6 text-right"><a href="@Url.Action("Create", "Report")" class="btn btn-primary btn-sm">new report</a></div>
+            }
+
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $("#ddlReports").change(function () {
+            var pid = $(this).val();
+            $.ajax({
+                type: "GET",
+                url: "/Currency/GetReportDataJson?currencyid=" + pid,
+                contentType: "application/json",
+                dataType: "JSON",
+                success: function (result) {
+                    $('#tblReports > tbody').empty();
+                    for (var i = 0; i < result.length; i++) {
+                        var rows = "<tr>"
+                            + "<td class='prtoducttd' >" + result[i].dateCreated + "</td>"
+                            + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].long) + "'>" + result[i].long + "</td>"
+                            + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].short) + "'>" + result[i].short + "</td>"
+                            + "<td class='prtoducttd' >" + result[i].changeLong + "</td>"
+                            + "<td class='prtoducttd' >" + result[i].changeShort + "</td>"
+                            + "<td class='prtoducttd' >" + result[i].longPercent + "</td>"
+                            + "<td class='prtoducttd' >" + result[i].shortPercent + "</td>"
+                            + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].netpositions) + "'>" + result[i].netpositions + "</td>"
+                            + "</tr>";
+                        $('#tblReports tbody').append(rows);
                     }
-                });
+                },
+                error: function (errormessage) {
+                    alert(errormessage.responseText);
+                }
             });
         });
+    });
 
-        function ColorCoder(value) {
-            var color = "";
-            if (value > 50000) {
-                color = "#ffe6e6";
-            }
-            else if (value < 50000) {
-                color = "#ff0000";
-            }
-            else {
-                color = "#00e600";
-            }
-            return color;
+    function ColorCoder(value) {
+        var color = "";
+        if (value > 50000) {
+            color = "#ffe6e6";
         }
-    </script>
+        else if (value < 50000) {
+            color = "#ff0000";
+        }
+        else {
+            color = "#00e600";
+        }
+        return color;
+    }
+
+</script>
+
+
+
+<script>
+    $(function () {
+        $("#ddlReports2").change(function () {
+            var pid = $(this).val();
+            $.ajax({
+                type: "GET",
+                url: "/Currency/GetReportDataJson?currencyid=" + pid,
+                contentType: "application/json",
+                dataType: "JSON",
+                success: function (result) {
+                    $('#tblReports > tbody').empty();
+                    for (var i = 0; i < result.length; i++) {
+                        var rows = "<tr>"
+                            + "<td class='prtoducttd' >" + result[i].dateCreated.split('T')[0]+ "</td>"
+                            + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].long) + "'>" + result[i].long + "</td>"
+                            + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].short) + "'>" + result[i].short + "</td>"
+                            + "<td class='prtoducttd' >" + result[i].changeLong + "</td>"
+                            + "<td class='prtoducttd' >" + result[i].changeShort + "</td>"
+                            + "<td class='prtoducttd' >" + result[i].longPercent + "</td>"
+                            + "<td class='prtoducttd' >" + result[i].shortPercent + "</td>"
+                            + "<td class='prtoducttd' style='background-color: " + ColorCoder(result[i].netpositions) + "'>" + result[i].netpositions + "</td>"
+                            + "</tr>";
+                        $('#tblReports tbody').append(rows);
+                    }
+                },
+                error: function (errormessage) {
+                    alert(errormessage.responseText);
+                }
+            });
+        });
+    });
+
+    function ColorCoder(value) {
+        var color = "";
+        if (value > 50000) {
+            color = "#ffe6e6";
+        }
+        else if (value < 50000) {
+            color = "#ff0000";
+        }
+        else {
+            color = "#00e600";
+        }
+        return color;
+    }
+</script>
+
+
 
