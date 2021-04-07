@@ -5,6 +5,7 @@ using COT_Projects.Model.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,10 +14,10 @@ namespace COT_Projects.Business.AccountBusiness
 {
     public class RegisterBusiness: IRegisterBusiness
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly IMapper _mapper;
 
-        public RegisterBusiness(UserManager<IdentityUser> userManager, IMapper mapper)
+        public RegisterBusiness(UserManager<ApplicationUser> userManager, IMapper mapper)
         {
             _userManager = userManager;
             _mapper = mapper;
@@ -51,6 +52,12 @@ namespace COT_Projects.Business.AccountBusiness
         public async Task<UserViewModel> UserProfile(string email)
         {
             return _mapper.Map<UserViewModel>(await _userManager.FindByEmailAsync(email));
+        }
+
+        public List<UserViewModel> Users()
+        {
+            var list = _userManager.Users;
+            return list.Select(_mapper.Map<ApplicationUser, UserViewModel>).ToList();
         }
     }
 }

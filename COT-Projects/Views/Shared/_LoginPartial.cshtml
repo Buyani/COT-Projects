@@ -1,12 +1,12 @@
-﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+﻿@using COT_Projects.Data.Entities; 
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 
 @if (SignInManager.IsSignedIn(User))
 {
     <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>@User.Identity.Name.ToString().Split('@')[0]</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>@User.FindFirst("Hello")</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
             <ul class="dropdown-menu">
                 <li><a href="@Url.Action("LogIn", "Account", new { area = "" })"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
                 <li><a href="@Url.Action("Profile", "Account", new {email=User.Identity.Name})"><i class="lnr lnr-cog"></i> <span>Profile</span></a></li>

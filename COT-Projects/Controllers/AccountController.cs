@@ -23,6 +23,11 @@ namespace COT_Projects.Controllers
             _rolebusiness = rolebusiness;
 
         }
+        public IActionResult Users()
+        {
+            var users = _registerbusiness.Users();
+            return View(users);
+        }
         public IActionResult Register()
         {
             return View();

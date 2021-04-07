@@ -542,3 +542,4 @@ C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Ra
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Currencies.cshtml.g.cs
 C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Account\Profile.cshtml.g.cs
+C:\Users\Admin\Source\repos\COT-Projects\COT-Projects\obj\Debug\netcoreapp3.1\Razor\Views\Account\Users.cshtml.g.cs

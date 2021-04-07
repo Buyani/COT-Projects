@@ -1,4 +1,5 @@
-﻿using COT_Projects.Model.Models;
+﻿using COT_Projects.Data.Entities;
+using COT_Projects.Model.Models;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -10,11 +11,11 @@ namespace COT_Projects.Business.AccountBusiness
 {
     public class LogInBusiness: ILogInBusiness
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public LogInBusiness(UserManager<IdentityUser> userManager,
-                              SignInManager<IdentityUser> signInManager)
+        public LogInBusiness(UserManager<ApplicationUser> userManager,
+                              SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;

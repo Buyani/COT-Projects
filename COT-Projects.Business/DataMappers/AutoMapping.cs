@@ -22,7 +22,7 @@ namespace COT_Projects.Business.DataMappers
             CreateMap<Currency, CurrencyModelView>();
 
 
-            CreateMap<IdentityUser, UserViewModel>();
+            CreateMap<ApplicationUser, UserViewModel>();
         }
     }
 }

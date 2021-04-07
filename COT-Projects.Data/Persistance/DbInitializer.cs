@@ -10,18 +10,22 @@ namespace COT_Projects.Data.Persistance
 {
     public static class DbInitializer
     {
-        public static async Task SeedUsersAsync(UserManager<IdentityUser> userManager,RoleManager<IdentityRole>roleManager)
+        public static async Task SeedUsersAsync(UserManager<ApplicationUser> userManager,RoleManager<IdentityRole>roleManager)
         {
             if (userManager.FindByEmailAsync("admin@10trades.com").Result == null)
             {
-                IdentityUser user = new IdentityUser
+                ApplicationUser user = new ApplicationUser
                 {
+                    FirstName="Buyani",
+                    LastName="Mhlongo",
                     UserName = "admin@10trades.com",
                     Email = "admin@10trades.com",
                     EmailConfirmed = true
                 };
-                IdentityUser user1 = new IdentityUser
+                ApplicationUser user1 = new ApplicationUser
                 {
+                    FirstName="Buyani",
+                    LastName="Shezi",
                     UserName = "buyani@10trades.com",
                     Email = "buyani@10trades.com",
                     EmailConfirmed = true

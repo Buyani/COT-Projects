@@ -16,6 +16,7 @@ using COT_Projects.Business.CurrencyBusiness;
 using COT_Projects.Business.ReportBusiness;
 using COT_Projects.Business.AccountBusiness;
 using COT_Projects.Data.Entities;
+using COT_Projects.Business.Extensions;
 
 namespace COT_Projects
 {
@@ -49,11 +50,16 @@ namespace COT_Projects
             services.AddDbContext<COT_ProjectDataContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("CotConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddRoles<IdentityRole>()
-                .AddEntityFrameworkStores<COT_ProjectDataContext>();
 
-           //services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationClaimsPrincipalFactory>();
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+             {
+                 options.SignIn.RequireConfirmedAccount = true;
+             }).AddEntityFrameworkStores<COT_ProjectDataContext>()
+             .AddDefaultTokenProviders();
+
+            //custom user claims
+            services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, MyUserClaimsPrincipalFactory>();
+
 
             services.Configure<PasswordHasherOptions>(options =>
                 options.CompatibilityMode = PasswordHasherCompatibilityMode.IdentityV3);
@@ -71,7 +77,7 @@ namespace COT_Projects
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             if (env.IsDevelopment())
             {

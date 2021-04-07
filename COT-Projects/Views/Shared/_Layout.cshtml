@@ -45,7 +45,8 @@
                         @if (User.IsInRole("Admin"))
                         {
                             <li><a href="@Url.Action("Currencies", "Currency")" class=""><i class="lnr lnr-menu"></i> <span>Currency</span></a></li>
-                            <li><a href="@Url.Action("Roles", "Account")" class=""><i class="lnr lnr-users"></i> <span>Roles</span></a></li>
+                            <li><a href="@Url.Action("Users", "Account")" class=""><i class="lnr lnr-users"></i> <span>Users</span></a></li>
+                            <li><a href="@Url.Action("Roles", "Account")" class=""><i class="lnr lnr-pencil"></i> <span>Roles</span></a></li>
                         }
                         @if (User.IsInRole("Client") || User.IsInRole("Admin"))
                         {
